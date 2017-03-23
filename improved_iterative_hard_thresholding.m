@@ -11,7 +11,7 @@ for k=1:max_iter
     end
     x = update(x, alpha_0*t);
     
-    %% Step 3
+    % Step 3
      supp = x~=0;
      grad = df(x);
      if norm(grad - supp .* grad) <= epsilon
