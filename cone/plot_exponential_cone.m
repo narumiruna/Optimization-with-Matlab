@@ -1,17 +1,17 @@
-xlin = linspace(1, -2);
+xlin = linspace(1, - 2);
 ylin = linspace(0, 2);
-[X,Y] = meshgrid(xlin, ylin);
+[X, Y] = meshgrid(xlin, ylin);
 
-Z  = arrayfun(@boundary ,X, Y);
+Z = arrayfun(@boundary, X, Y);
 
-C = X .* Y ;
+C = X .* Y;
 surf(X, Y, Z, C);
 colormap jet
 
 xlabel('x');
 ylabel('y');
 zlabel('z');
-axis([-2, 1, 0, 2, 0, 2])
+axis([- 2, 1, 0, 2, 0, 2])
 
 function z = boundary(x, y)
 zmax = 3;
