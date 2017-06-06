@@ -14,11 +14,11 @@ zlabel('z');
 axis([-2, 1, 0, 2, 0, 2])
 
 function z = boundary(x, y)
-zlim = 3;
+zmax = 3;
 if y > 0
     z = y * exp(x / y);
 else
-    z = zlim;
+    z = zmax;
 end
-z = min(z, zlim);
+z = min(z, zmax);
 end
