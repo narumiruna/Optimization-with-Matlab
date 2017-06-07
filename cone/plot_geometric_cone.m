@@ -1,3 +1,4 @@
+function [] = plot_geometric_cone()
 xlin = linspace(0, 2);
 ylin = linspace(0, 2);
 [X, Y] = meshgrid(xlin, ylin);
@@ -12,6 +13,7 @@ xlabel('x');
 ylabel('y');
 zlabel('z');
 axis([0, 2, 0, 2, 0, 2])
+end
 
 function z = boundary(x, y)
 % use newton method to find the value of z
